@@ -1,0 +1,16 @@
+<header id="header">
+  <div class="wrapper">
+    <nav>
+      {% if page.nav != 'home' %}
+        <a href=" /">Домой</a>
+        <a href=" /blog ">Мой блог</a>
+        <a href=" /feed.xml "><i class="fa fa-rss" aria-hidden="true"></i></a>
+      {% else %}
+        <a href=" # ">Домой</a>
+        <a href=" #about ">Обо мне</a>
+        <a href=" #blog ">Мой блог</a>
+        <a href=" #projects">Портфолио</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>
