@@ -4,6 +4,13 @@
 		{% if site.comment %}
         <h1 class="blue-title">Comments</h1>
 		{% endif %}
+
+		<!-- Put this div tag to the place, where the Comments block will be -->
+		<div id="vk_comments"></div>
+		<script type="text/javascript">
+		VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+		</script>
+
 		{% if site.comment.disqus %}
 		<div id="disqus_thread"></div>
 		<!--<div class="comment-desc">Powered by Disqus. If your browser can't load comments successfully, maybe you need to use a vpn.</div>-->
